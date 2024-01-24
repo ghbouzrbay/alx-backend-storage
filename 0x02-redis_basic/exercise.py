@@ -40,7 +40,7 @@ def call_history(method: Callable) -> Callable:
 
 
 def replay(fn: Callable) -> None:
-    ''' Replays the history of a function
+    ''' Displays the call history of a Cache class' method.
     '''
     name = method.__qualname__
     cache = redis.Redis()
