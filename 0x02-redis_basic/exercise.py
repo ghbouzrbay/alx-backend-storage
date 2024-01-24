@@ -81,10 +81,7 @@ class Cache:
         self._redis.set(data_key, data)
         return data_key
 
-    def get(
-            self,
-            key: str,
-            fn: Callable = None,
+    def get(self, key: str, fn: Callable = None,
             ) -> Union[str, bytes, int, float]:
         '''Retrieves a value from a Redis data storage.
         '''
